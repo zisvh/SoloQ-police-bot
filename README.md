@@ -1,6 +1,8 @@
-# Title / Repository Name
+# SOLOQ POLICE:
 
-## About / Synopsis
+![Test Image 4](https://cdn.discordapp.com/attachments/783997102996979733/943096797201588255/discordpolice.png)
+
+## What is it ?
 
 * What is it, what does it do / Abstract
 * Project status: working/prototype
@@ -11,28 +13,6 @@ See real examples:
 * <https://github.com/nuxeo/nuxeo/blob/master/README.md>
 * <https://github.com/nuxeo/nuxeo-drive/blob/master/README.md>
 * <https://github.com/nuxeo/nuxeo-sdk-ios/blob/master/README.md>
-
-## Table of contents
-
-Use for instance <https://github.com/ekalinin/github-markdown-toc>:
-
-> * [Title / Repository Name](#title--repository-name)
->   * [About / Synopsis](#about--synopsis)
->   * [Table of contents](#table-of-contents)
->   * [Installation](#installation)
->   * [Usage](#usage)
->     * [Screenshots](#screenshots)
->     * [Features](#features)
->   * [Code](#code)
->     * [Content](#content)
->     * [Requirements](#requirements)
->     * [Limitations](#limitations)
->     * [Build](#build)
->     * [Deploy (how to install build product)](#deploy-how-to-install-build-product)
->   * [Resources (Documentation and other links)](#resources-documentation-and-other-links)
->   * [Contributing / Reporting issues](#contributing--reporting-issues)
->   * [License](#license)
->   * [About Nuxeo](#about-nuxeo)
 
 ## Installation
 
