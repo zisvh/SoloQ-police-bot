@@ -84,9 +84,10 @@ async def on_ready():
 
 @bot.command()
 async def soloQ(ctx):
+    await ctx.send("https://tenor.com/view/cops-police-sirens-catching-crminals-what-you-gonna-do-gif-22472645")
     for i in range(5):
         df1 = df.loc[[i]]
         await ctx.send(df1.to_string(header=False, index=False))
         i = i + 1
 
-bot.run("INSERT DISCORD BOT TOKEN HERE")
+bot.run("INSERT DISCORD BOT TOKEN HERE") # here paste in-between double quotes your discord bot token
