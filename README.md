@@ -23,9 +23,9 @@ https://twitter.com/arieslol_
 
 # Installation (if you **don't know** Python/League API)❌:
 
-Well, here is the sad part, if you don't know anything about python or programming in general it will be hard for you to set this up yourself, **HOWEVER**, if you are from an ERL team I am willing to help you set it up for your team.
+Well, here is the sad part, if you don't know anything about python or programming in general it will be hard for you to set this up yourself, <ins>**HOWEVER**, if you are from an ERL team I am willing to help you set it up for your team.</ins>
 
-You can DM me right here, and I will try to help you: Aries#7475
+**You can DM me right here, and I will try to help you: Aries#7475**
 
 ## USE THE BOT:
 
