@@ -2,24 +2,25 @@
 
 ![Test Image 4](https://cdn.discordapp.com/attachments/783997102996979733/943096797201588255/discordpolice.png)
 
-## What is it ?
+## DISCLAIMER
 
-* What is it, what does it do / Abstract
-* Project status: working/prototype
-* Nuxeo Support
+* I don't consider myself good at coding, in fact this script is really not optimized, but at least it works. (if you can help me make it cleaner/better PM me)
+* **Why did you create this bot ?** As a coach I feel like a lot of the time players are slacking in soloQ. And I cba'd counting every players games everyday on opgg, now I can do that with a simple command.
+* **How did you create this bot ?** Using really basic League API & Python knowledge.
+* **Who are you** ? I am Aries, coach for Team Oplon in the LFL
 
-See real examples:
-
-* <https://github.com/nuxeo/nuxeo/blob/master/README.md>
-* <https://github.com/nuxeo/nuxeo-drive/blob/master/README.md>
-* <https://github.com/nuxeo/nuxeo-sdk-ios/blob/master/README.md>
+My Twitter:
+https://twitter.com/arieslol_
 
 ## Installation
 
-Sample:
+The installation of the bot is fairly easy if you have programming knowledge, if you don't then it's longer, so I will do it for both:
 
-* From the Nuxeo Marketplace: install [the Sample Nuxeo Package](https://connect.nuxeo.com/nuxeo/site/marketplace/package/nuxeo-sample).
-* From the command line: `nuxeoctl mp-install nuxeo-sample`
+## Installation (if you know how Python/League API)💻
+
+* From the Discord developer website, create an application & a bot, follow this tutorial: https://betterprogramming.pub/coding-a-discord-bot-with-python-64da9d6cade7
+* Once your discord bot is loaded on your Team server, here are things that you need to modify in our python script:
+
 
 ## Usage
 
