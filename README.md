@@ -4,7 +4,7 @@
 
 ## DISCLAIMER
 
-* I don't consider myself good at coding, in fact this script is really not optimized, but at least it works. (if you can help me make it cleaner/better PM me)
+* I don't consider myself good at coding, in fact this script is not optimized, but it works. (if you can help me make it cleaner/better PM me)
 * **Why did you create this bot ?** As a coach I feel like a lot of the time players are slacking in soloQ. And I cba'd counting every players games everyday on opgg, now I can do that with a simple command.
 * **How did you create this bot ?** Using really basic League API & Python knowledge.
 * **Who are you** ? I am Aries, coach for Team Oplon in the LFL
