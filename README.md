@@ -10,7 +10,7 @@
 * **Who are you** ? I am Aries, coach for Team Oplon in the LFL
 
 My Twitter:
-https://twitter.com/arieslol_
+`@arieslol_`
 
 # Installation (if you know Python/League API)💻:
 
