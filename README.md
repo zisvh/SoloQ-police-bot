@@ -17,9 +17,12 @@ My Twitter:
 1) From the Discord developer website, create an application & a bot, follow this tutorial: https://betterprogramming.pub/coding-a-discord-bot-with-python-64da9d6cade7
 2) Clone this repository.
 3) Once your discord bot is loaded on your Team server, here are things that you need to modify in our python script:
--The API KEY (modify at line 11)
--The five puuid's of your players (modify at line 23 to 27)
--The token of your discord bot (modify at line 93 -last line)
+
+`The API KEY (modify at line 11)`
+
+`The five puuid's of your players (modify at line 23 to 27)`
+
+`The token of your discord bot (modify at line 93 -last line)`
 
 # Installation (if you **don't know** Python/League API)❌:
 
