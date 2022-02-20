@@ -25,42 +25,25 @@ jgl_id = 'Kae9k0d4l2o6sKblB36Pm-IuPjgDNFLu2Vz0ODNcOG2PaNVXRWL27j82I7-UKGCwDgifz8
 mid_id = '4B_9lFf5JU4onY__sQyZY6RVVNrXnsCsX6vqYgjWKjlFqnGj4Vb0gxCa0mUMWU8uK_6NM-IeqaB_ag' # here write the puuid of your midlaner
 adc_id = 'eCze5I2zMSyG4x84qyVrlbJjQOdyr6cn6IPah6AOjpZA7x6LBm4EtdMUJzjR8EAZBazCsGqSy7-oTw' # here write the puuid of your ad carry
 sup_id = 'IQYpa2gn6ocPcdte-LHXNk8VTVSrcFY6EzfJqux4Nw33wonDXugp6bChZm3bY5-hC2d-2g_17HfMGg' # here write the puuid of your support
-oplon = [top_id, jgl_id, mid_id, adc_id, sup_id]
-
+team_id = [top_id, jgl_id, mid_id, adc_id, sup_id]
+team_mh = []
 #CALCULS ----------------------------------
 player_name = ['Toplaner', 'Jungler', 'Midlaner', 'ADCarry', 'Support']
 game_nbrs = []
 
 # DAY COMMAND ----------------------------------
 if sys.argv[1] == "day":
-    topmh = list(watcher.match.matchlist_by_puuid(region, top_id, type="ranked", start_time=last, end_time=current_time, count=100))
-    jglmh = list(watcher.match.matchlist_by_puuid(region, jgl_id, type="ranked", start_time=last, end_time=current_time, count=100))
-    midmh = list(watcher.match.matchlist_by_puuid(region, mid_id, type="ranked", start_time=last, end_time=current_time, count=100))
-    adcmh = list(watcher.match.matchlist_by_puuid(region, adc_id, type="ranked", start_time=last, end_time=current_time, count=100))
-    supmh = list(watcher.match.matchlist_by_puuid(region, sup_id, type="ranked", start_time=last, end_time=current_time, count=100))
-
+    team_mh = [list(watcher.match.matchlist_by_puuid(region, id, type="ranked", start_time=last, end_time=current_time, count=100)) for id in team_id]
 # WEEK COMMAND ----------------------------------
 if sys.argv[1] == "week":
-    topmh = list(watcher.match.matchlist_by_puuid(region, top_id, type="ranked", start_time=week, end_time=current_time, count=100))
-    jglmh = list(watcher.match.matchlist_by_puuid(region, jgl_id, type="ranked", start_time=week, end_time=current_time, count=100))
-    midmh = list(watcher.match.matchlist_by_puuid(region, mid_id, type="ranked", start_time=week, end_time=current_time, count=100))
-    adcmh = list(watcher.match.matchlist_by_puuid(region, adc_id, type="ranked", start_time=week, end_time=current_time, count=100))
-    supmh = list(watcher.match.matchlist_by_puuid(region, sup_id, type="ranked", start_time=week, end_time=current_time, count=100))
+    team_mh = [list(watcher.match.matchlist_by_puuid(region, id, type="ranked", start_time=week, end_time=current_time, count=100)) for id in team_id]
 
 #LAST TWO DAYS COMMAND ----------------------------------
 if sys.argv[1] == "two":
-    topmh = list(watcher.match.matchlist_by_puuid(region, top_id, type="ranked", start_time=two, end_time=current_time, count=100))
-    jglmh = list(watcher.match.matchlist_by_puuid(region, jgl_id, type="ranked", start_time=two, end_time=current_time, count=100))
-    midmh = list(watcher.match.matchlist_by_puuid(region, mid_id, type="ranked", start_time=two, end_time=current_time, count=100))
-    adcmh = list(watcher.match.matchlist_by_puuid(region, adc_id, type="ranked", start_time=two, end_time=current_time, count=100))
-    supmh = list(watcher.match.matchlist_by_puuid(region, sup_id, type="ranked", start_time=two, end_time=current_time, count=100))
+    team_mh = [list(watcher.match.matchlist_by_puuid(region, id, type="ranked", start_time=two, end_time=current_time, count=100)) for id in team_id]
 
 # API DATAFRAME CREATION ----------------------------------
-game_nbrs.append(len(topmh))
-game_nbrs.append(len(jglmh))
-game_nbrs.append(len(midmh))
-game_nbrs.append(len(adcmh))
-game_nbrs.append(len(supmh))
+game_nbrs = [len(elt) for elt in team_mh]
 
 df = pd.DataFrame(
     {'Player': player_name,
